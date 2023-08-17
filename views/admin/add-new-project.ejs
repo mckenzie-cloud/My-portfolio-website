@@ -1,0 +1,32 @@
+
+<a href="/admin/dashboard">&larr; Back</a>
+<div class="container mx-auto">
+    <div class="w-full max-w-md mx-auto py-5">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/admin/dashboard/add-new-project" method="POST">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold my-2" for="title">
+                Title
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="title" id="title" type="text" placeholder="add title" required>
+                <label class="block text-gray-700 text-sm font-bold my-2" for="description">
+                    Description
+                </label>
+                <textarea name="description" rows="4" class="resize-none shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="description..." required></textarea>
+                <br>
+                <label class="block text-gray-700 text-sm font-bold my-2" for="link">
+                    Github Link
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="link" id="link" type="text" placeholder="add link" required>
+                <label class="block text-gray-700 text-sm font-bold my-2" for="video_ID">
+                    Youtube video ID
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="video_ID" id="video_ID" type="text" placeholder="youtube video ID (e.g. aqz-KE-bpKQ)" required>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    Add
+                </button>
+            </div>
+        </form>
+      </div>
+</div>
