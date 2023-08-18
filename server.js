@@ -16,8 +16,6 @@ app.use(morgan('common'));
 
 // Database connection here.
 const connectDB = require('./server/config/db.js');
-// Connect to DB
-connectDB();
 
 const pages_routes = require('./server/routes/pages-route.js');
 const admin_routes = require('./server/routes/admin-route.js');
@@ -52,6 +50,9 @@ app.use('/', pages_routes);
 app.use('/', admin_routes);
 app.use('/other', other_routes);
 
-app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}`);
-})
+// Wait for the database to connect before serving request.
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Listening request on port: ${PORT}`);
+    })
+});
