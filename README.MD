@@ -6,10 +6,10 @@ This portfolio website is a collection of the different projects that I made, pa
 NODE.JS
 EXPRESS.JS
 MONGODB
-TAILWIND CSS
+TAILWINDCSS
 DAISY UI
 EJS
 JSONWEBTOKEN
 MONGOOSE
 BCRYPT
-and many more..
+and many more.
